@@ -29,6 +29,8 @@
 }
 
 body {
+    width: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -47,6 +49,30 @@ body {
     padding: 100px 0;
 }
 
+.background {
+    position: relative;
+    background-image: url(../src/background-pattern.png);
+    width: 100%;
+    background-size: cover;
+
+  }
+
+
+  .background::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.1;
+    background-image: url(../src/background-pattern.png);
+  }
+
+  .header-img {
+    position: relative;
+    right: 187px;
+  }
+
 /* reset styles */
 
 a {
@@ -61,7 +87,6 @@ h4,
 p {
     margin: 0;
     padding: 0;
-  
     font-weight: inherit;
     font-size: inherit;
   }
@@ -75,29 +100,43 @@ h3 {
   line-height: var(--heading-line-height);
 }
 
-
-  .background {
-    position: relative;
-  }
-
-
-  .background::before {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.1;
-    background-image: url();
-  }
-
   h1 {
     font-size: var(--h1-size);
-    
   }
 
   .h1-dark {
     color: var(--dark);
+    white-space: nowrap;
   }
 
+  h2 {
+    font-size: var(--h2-size);
+  }
+  
+  h3 {
+    font-size: var(--h3-size);
+  }
+
+  .text-columns {
+    position: absolute;
+    display: flex;
+    top: 550px;
+    z-index: 2;
+  }
+
+  .text-col {
+    flex-basis: 50%;
+    margin-right: 30px;
+  }
+
+.btn {
+position: absolute;
+top: 720px;
+left: 550px;
+padding: 11px 23px;
+background-color: var(--main);
+font-weight: 700;
+color: var(--white);
+}
+  
 

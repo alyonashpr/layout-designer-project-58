@@ -101,38 +101,38 @@ h3 {
   line-height: var(--heading-line-height);
 }
 
-  h1 {
-    font-size: var(--h1-size);
-  }
+h1 {
+  font-size: var(--h1-size);
+}
 
-  .h1-dark {
-    color: var(--dark);
-    white-space: nowrap;
-  }
+.h1-dark {
+  color: var(--dark);
+  white-space: nowrap;
+}
 
-  h2 {
-    font-size: var(--h2-size);
-  }
-  
-  h3 {
-    font-size: var(--h3-size);
-  }
+h2 {
+  font-size: var(--h2-size);
+}
 
-  .p {
-    line-height: var(--line-height);
-  }
+h3 {
+  font-size: var(--h3-size);
+}
 
-  .text-columns {
-    position: absolute;
-    display: flex;
-    top: 550px;
-    z-index: 2;
-  }
+.p {
+  line-height: var(--line-height);
+}
 
-  .text-col {
-    flex-basis: 50%;
-    margin-right: 30px;
-  }
+.text-columns {
+  position: absolute;
+  display: flex;
+  top: 550px;
+  z-index: 2;
+}
+
+.text-col {
+  flex-basis: 50%;
+  margin-right: 30px;
+}
 
 .btn {
 position: absolute;

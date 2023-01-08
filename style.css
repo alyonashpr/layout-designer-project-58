@@ -171,6 +171,7 @@ color: var(--white);
   z-index: -1;
   position: relative;
   top: -200px;
+  height: 991px;
 }
 
 #navigation .container {
@@ -178,18 +179,24 @@ color: var(--white);
   flex-wrap: wrap;
   align-content: flex-start;
   flex-direction: row;
-  top: 100px;
+  gap: 30px;
+  top: 100px;  
 }
+
 
 .card {
   box-sizing: border-box;
   padding: 24px;
   background-color: var(--light);
   max-width: 350px;
-  margin: 20px;
 }
 
-.card-h {
+.card:nth-child(3n) {
+  flex-basis: 30%;
+}
+
+.card-header {
+  box-sizing: border-box;
   padding: 24px;
   max-width: 350px;
 }

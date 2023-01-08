@@ -163,5 +163,55 @@ color: var(--white);
 .videoframe {
   align-items: center;
   filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
-
 }
+
+#navigation {
+  background-color: var(--main-dark);
+  padding-top: 0;
+  z-index: -1;
+  position: relative;
+  top: -200px;
+}
+
+#navigation .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  flex-direction: row;
+  top: 100px;
+}
+
+.card {
+  box-sizing: border-box;
+  padding: 24px;
+  background-color: var(--light);
+  max-width: 350px;
+  margin: 20px;
+}
+
+.card-h {
+  padding: 24px;
+  max-width: 350px;
+}
+
+.white {
+white-space: nowrap;
+color: var(--light);
+}
+
+#navigation h2 {
+  font-size: 52px;
+}
+
+#navigation h3 {
+  margin-top: 30px;
+}
+.card-number {
+  margin-bottom: 70px;
+  font-size: 64px;
+  font-family: var(--heading-font);
+  line-height: 1;
+}
+
+
+

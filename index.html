@@ -24,7 +24,7 @@
                     <span class="dark">в программировании</span>
                 </h1>
 
-                <img src="/layout-designer-project-58/src/1block-img.png" alt="" class="image-1">
+                <img src="./src/1block-img.png" alt="" class="image-1">
 
                 <div class="two-columns">
                     <div class="text-column">
@@ -260,28 +260,29 @@
         </section>
     </main>
 
-    <footer>
-
-        <div class="container ">
-            <div class="backg-dark">
-                <div class="f-text">
-                    <h3>Хотите узнать больше? <br /> Подпишитесь на обновления</h3>
-                </div>
-
-                <div class="mail-form">
-                    <span>Электронная почта</span>
+    <footer class="footer">
+        <div class="footer-subscribe">
+            <h2 class="footer-title">Хотите узнать больше?<br> Подпишитесь на обновления</h2>
+            <div class="footer-right-column">
+                <p class="footer-email">Электронная почта</p>
+                <div class="footer-forms">
                     <form>
-                        <input type="email" id="email" name="email" placeholder="Ваша электронная почта" required>
-                      </form>
-                    <span class="span-2">Подписываясь, вы принимаете <u>правила сервиса</u></span>
+                        <label class="sr-only" for="e-mail">
+                            Ваш e-mail
+                        </label>
+                        <input  class="footer-form" id="email" type="text" placeholder="Ваша электронная почта">
+                    </form>
+                    <a href="#">
+                        <button class="footer-button">
+                        </button>
+                    </a>
                 </div>
+                <p class="footer-rules">Подписываясь, вы принимаете <a class="footer-link-rules" href="#">правила сервиса</a></p>
             </div>
-
-            <span>© 2020 Константин Константинопольский</span>
-            <span>По материалам статьи <a href="">Yash Ranadive Cognitive Biases in Programming</a> </span>
-            <a href="">Курсы программирования Hexlet</a>
         </div>
-
+        <p class="footer-authors">© 2023 Хилал-Шпиро</p>
+        <p class="footer-authors">По материалам статьи <a class="footer-links" target="_blank" href="https://medium.com/hackernoon/cognitive-biases-in-programming-5e937707c27b">Yash Ranadive Cognitive Biases in Programming</a></p>
+        <p class="footer-authors"><a class="footer-links"  target="_blank"  href="https://ru.hexlet.io/my">Курсы программирования Hexlet</a></p>
     </footer>
 
     
